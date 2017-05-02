@@ -1,0 +1,36 @@
+<% if false %>
+<%= form_for(@assignment) do |f| %>
+  <% if @assignment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+
+      <ul>
+      <% @assignment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+      <%= f.label 'Assignment Name' %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label 'Source' %><br>
+      <%= f.text_field :assignment_source %>
+    </div>
+    <div class="field">
+      <%= f.label 'Week' %><br>
+      <%= f.grouped_collection_select :course_week_id, CourseModule.all, :course_weeks, :module_num, :id, :week_num %>
+    </div>
+    <div class="field">
+      <%= f.label 'File' %><br>
+      <%= f.text_field :assignment_file %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<% end %>

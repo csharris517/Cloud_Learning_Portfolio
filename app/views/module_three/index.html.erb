@@ -1,0 +1,59 @@
+<h1 style="text-align: center">Module Three</h1>
+
+<p class="text-center" style="width: 80%;margin: auto">
+  In this module, we looked a little deeper into how Cloud Computing can impact and benefit businesses. We continued
+  where we left off on the
+  <a href="http://cloudu.rackspace.com/diweb/home" , target="_blank">Rackspace CloudU
+    Certification</a> with the second half of the course, as well as completing the final exam for the Certification. We
+  also took a look at cryptography, Public Key Infrastructure (PKI), and Michael Porter's
+  <a href="https://www.cleverism.com/porters-five-forces-model-strategy-framework/" , target="_blank">Five Forces
+    Model</a> and <a href="https://www.youtube.com/watch?v=7wL6x1BSlw8" , target="_blank">Value Chain Model</a>.
+</p>
+
+<h2 style="text-align: center">Week Ten</h2>
+
+<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
+  <thead>
+  <tr>
+    <th>Assignment Name</th>
+    <th>Source</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @w10assignments.each do |assignment| %>
+      <tr>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+
+</table><br/>
+
+<h2 style="text-align: center">Week Eleven</h2>
+
+<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
+  <thead>
+  <tr>
+    <th>Assignment Name</th>
+    <th>Source</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+
+
+  <tbody>
+  <% @w11assignments.each do |assignment| %>
+      <tr>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br/>

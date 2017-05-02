@@ -1,0 +1,73 @@
+<h1 style="text-align: center">Module Two</h1>
+
+<p class="text-center" style="width: 80%;margin: auto">In this Module, we dive deep into Virtualization and its related concepts. To learn about these concepts, I watched
+  and completed assignments on tutorials by <a href=" https://youtu.be/zLJbP6vBk2M", target="_blank">Eli the Computer
+  Guy</a> and <a href="http://www.professormesser.com/", target="_blank">Professor Messer</a>.  I also read Special
+  Publications from <a href="https://www.nist.gov/", target="_blank">NIST</a> and completed lessons on
+  <a href="http://cloudu.rackspace.com/diweb/home", target="_blank">Rackspace CloudU</a>.</p>
+
+<h2 style="text-align: center">Week Five</h2>
+<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
+  <thead>
+  <tr>
+    <th>Assignment Name</th>
+    <th>Source</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @w5assignments.each do |assignment| %>
+      <tr>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h2 style="text-align: center">Week Six</h2>
+<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
+  <thead>
+  <tr>
+    <th>Assignment Name</th>
+    <th>Source</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @w6assignments.each do |assignment| %>
+      <tr>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+<h2 style="text-align: center">Week Seven</h2>
+<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
+  <thead>
+  <tr>
+    <th>Assignment Name</th>
+    <th>Source</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @w7assignments.each do |assignment| %>
+      <tr>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

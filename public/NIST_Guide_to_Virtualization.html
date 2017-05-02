@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>NIST Guide to Virtualization</title>
+    <link rel="stylesheet" href="public_blue.css">
+</head>
+
+<body>
+<div id="Header">
+    <h1>NIST Guide to Virtualization</h1>
+    <h2>NIST SP800-125</h2>
+    <h3>Cliff Harris - CIS 3357 - Prof. Crowley</h3>
+</div>
+<ol>
+    <li>How does NIST define virtualization?</li>
+    <p>NIST defines virtualization as "the simulation of the software and/or hardware upon which other software runs."  In other words, it allows software to act as hardware creating simulated environments called virtual machines.</p>
+    <li>What does NIST cite as advantages of full virtualization?</li>
+    <p>NIST cites two major advantages to full virtualization:</p>
+    <p>Operational Efficiency: full virtualization gives companies the ability to get more utilization out of their existing hardware.  By putting multiple virtual machines on each physical machine, they are able to use more of the hardware's resources.</p>
+    <p>Desktop Virtualization: full virtualization gives users the ability to have more than one operating system running on the same PC.  This allows the user to use software that doesn't run on their computer's operating system.</p>
+    <li>What distinguishes the different forms of virtualization?</li>
+    <p>The different forms of virtualization are distinguished by computing architecture layer, e.g.:</p>
+    <p>Application Virtualization: a virtual implementation of an API that will be used by a running application.  JVM (Java Virtual Machine) is an example of Application Virtualization.</p>
+    <p>Operating System Virtualization: a virtual implementation of the operating system interface that can be used to run applications written for the same operating system as the host, with each VM self-contained.</p>
+    <p>Full Virtualization: one or more operating systems and their applications running on virtual hardware.</p>
+    <li>What is the motivation for full virtualization?</li>
+    <p>In addition to the benefits listed in Question 2, the control over the exact versions of operating systems created through desktop virtualization allows users to make changes to the operating system, revert back if needed, and ensure that it meets the organization's security requirements.  It also gives the user the ability to run older versions of their operating system on the same machine in order to use software that is not compatible with their physical machine's current operating system version.</p>
+    <li>Compare and contrast single vs. multi-server virtualization.</li>
+    <p>Single Server Virtualization: supports a service that only runs on a legacy operating system that cannot be properly secured on its own.  This allows the host operating system to perform security controls on the guest operating system, which might not be able to do them on its own.</p>
+    <p>Multiple-Server Virtualization: instead of having multiple physical servers, which is costly in hardware and maintenance, multi-server virtualization gives the user the ability to create multiple virtual servers on one physical server.  With each service in its own guest operating system, security requirements are more easily enforced.</p>
+</ol>
+<a href="javascript:window.open('','_self').close();"style="color: black">close assignment</a>
+</body>
+</html>

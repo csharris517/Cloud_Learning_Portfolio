@@ -1,0 +1,2 @@
+module CourseWeeksHelper
+end

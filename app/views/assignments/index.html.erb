@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="margin-left: 10%">All Assignments</h1>
+
+<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Week</th>
+      <th>Assignment Name</th>
+      <th>Source</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assignments.each do |assignment| %>
+      <tr>
+        <td><%= assignment.course_week.course_module.module_num %></td>
+        <td><%= assignment.course_week.week_num %></td>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<!--<%= link_to 'New Assignment', new_assignment_path %>-->

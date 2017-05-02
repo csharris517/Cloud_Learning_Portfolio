@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Introduction to RAID</title>
+    <link rel="stylesheet" href="public_blue.css">
+</head>
+
+<body>
+<div id="Header">
+    <h1>Introduction to RAID</h1>
+    <h2>Eli the Computer Guy</h2>
+    <h3>Cliff Harris - CIS 3357 - Prof. Crowley</h3>
+</div>
+<ol>
+    <li>From a computer's perspective, what does RAID do?</li>
+    <p>RAID (Redundant Array of Inexpensive disks) allows a computer to see and use multiple hard drives as
+        if they were one (single logical drive).</p>
+    <li>What is the advantage of disk striping?</li>
+    <p>Disk Striping (RAID 0) allows you to combine multiple (2-32) physical hard drives of the same size into
+        one really big logical hard drive.</p>
+    <p>Advantage: makes reading/writing to the drives faster.</p>
+    <li>What is the main disadvantage of disk striping?</li>
+    <p>The disadvantage is that files are spread across multiple drives, so if one drive fails, all data on the
+        RAID is lost.</p>
+    <li>What is the main advantage and disadvantage of disk mirroring?</li>
+    <p>Disk Mirroring (RAID 1) creates identical copies of data on two physical hard drives.</p>
+    <p>Advantage: if one hard drive fails, the computer keeps running. Complete Redundancy.</p>
+    <p>Disadvantage: there is no increase in drive size or speed.</p>
+    <li>What is the major advantage of RAID 5?</li>
+    <p>RAID 5 (Disk Striping with Parity) has redundancy built in so that it if one hard drive fails, all the data
+        still exists because the other hard drives have the combined information.</p>
+    <li>In a RAID 5 context, what does hot swappable mean?</li>
+    <p>"Hot swappable" means that you can pull a hard drive out while the system is running and put another
+        in.</p>
+    <li>What are the 3 most common RAID configurations?</li>
+    <p>Disk Striping (RAID 0), Disk Mirroring (RAID 1), and Disk Striping with Parity (RAID 5)</p>
+</ol>
+<a href="javascript:window.open('','_self').close();"style="color: black">close assignment</a>
+</body>
+</html>

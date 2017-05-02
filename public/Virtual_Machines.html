@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Virtual Machines</title>
+    <link rel="stylesheet" href="public_blue.css">
+</head>
+
+<body>
+<div id="Header">
+    <h1>Virtual Machines</h1>
+    <h2>Professor Messer</h2>
+    <h3>Cliff Harris - CIS 3357 - Prof. Crowley</h3>
+</div>
+<h2 style="text-align: left">Using a Virtual Machine</h2>
+<ol>
+    <li>Compare and contrast the terms host and guest operating system.</li>
+    <p>Host and Guest Operating Systems are both fully-functional and usable Operating Systems located on the same machine.
+    However, the Host Operating System is the OS native to the machine, and Guest Operating Systems are the instances of
+    Operating Systems installed and operating simultaneously on the physical machine.</p>
+    <li>Name two different types of virtual machine software suitable for Windows based computers.</li>
+    <p>Professor Messer cites Microsoft Virtual PC (available from
+        <a href="https://www.microsoft.com/en-us/download/details.aspx?id=3702", target="_blank">Microsoft</a>) and
+        VirtualBox (available from <a href="http://www.virtualbox.org", target="_blank">Oracle</a>), both of which are free,
+        as being suitable for Windows based computers.</p>
+    <li>When you plan to run a VM on a Windows Laptop, what two resources are considered especially critical?</li>
+    <p>In order to run Virtual Machines, you need to have plenty of RAM and disk space.  This is because the Guest Operating
+    Systems and the Host Operating System are sharing the resources of the physical machine.  Memory and disk space is required
+    for each OS.</p>
+    <li>Why might you want to turn your installation disks into ISO files?</li>
+    <p>You can take everything off of multiple installation disks and encapsulate them into one disk image file.  This makes
+    the process of accessing and installing what is on those disks much faster and easier.</p>
+    <li>In a virtual machine context, what is a snapshot?</li>
+    <p>A snapshot can be viewed as a "recovery point" for an Operating System, with its configuration and current state saved.
+    This means that you can take a snapshot of an OS, make changes to it, and even delete it, then go back
+    to the the configuration the OS was in at the time the snapshot was taken.</p>
+</ol>
+<h2 style="text-align: left">Virtual Desktops and Servers</h2>
+<ol>
+    <li>What is a Hypervisor?</li>
+    <p>A Hypervisor is a piece of software, also known as a "virtual machine manager", that allows you to manage the Virtual
+    Machines and their relationships to the hardware in the physical machine.  It also maintains separation between the virtual
+    systems.</p>
+    <li>What is a Type 1, Bare Metal Hypervisor?</li>
+    <p>With a Type 1 Hypervisor, you start with a raw (blank) server and install the Hypervisor directly onto the machine.
+    You then install the Operating System instances onto the hypervisor from another networked computer with Management
+    Software using a Management Console.</p>
+    <li>What is a Type 2 Hypervisor?</li>
+    <p>Type 2 (or "hosted") hypervisors are installed onto an Operating System itself on a physical computer.  You can then
+    install Operating System instances into that hypervisor.</p>
+    <li>Name three advantages of virtualization.</li>
+    <p>By consolidating multiple servers onto one physical device, you can save a lot of room in the data center, have much
+    more flexibility around what you can do with the hardware, and save on the cost of running one virtualization server vs.
+    many physical servers.</p>
+</ol>
+<h2 style="text-align: left">Virtual Switches</h2>
+<ol>
+    <li>What impact does changing from a physical environment to a virtual environment have on the
+        network components?</li>
+    <p>When you migrate from a physical environment to a virtual environment, you are also virtualizing the networking components,
+    removing them from the server platform.</p>
+    <li>Describe a challenge associated with virtualizing your network components.</li>
+    <p>One of the challenges is the integration with the outside world.  Multiple servers may previously have each had its own
+    ethernet connection, but you may have to build in connection redundancy in order for all of the virtual servers to share the
+    network resources without compromising speed.</p>
+</ol>
+<h2 style="text-align: left">Network as a Service</h2>
+<ol>
+    <li>Explain what the term Network as a Service (NaaS) means.</li>
+    <p>Network as a Service refers to network virtualization inside the cloud, completely offsite.  You can then move your
+    platforms, applications, and Network onto the cloud, completely virtualizing those operations.</p>
+    <li>Name four advantages of Network as a Service (NaaS).</li>
+    <p>- Allows you to have an application used by thousands of people and have the third party NaaS provider handle network traffic.</p>
+    <p>- You can migrate your entire network around the world to accommodate for different geographic peak times.</p>
+    <p>- Your network connection can expand and contract, allowing you to add or remove bandwidth as needed.  This is useful when
+    your networked application has varying time-based peak times.</p>
+    <p>- You can work on your application from anywhere.  If you decide to move your entire office, the network stays where it is.</p>
+</ol>
+<h2 style="text-align: left">Onsite vs. Offsite Virtualization</h2>
+<ol>
+    <li>Name three advantages of onsite virtualization</li>
+    <p>- Complete control</p>
+    <p>- Flexibility to change and shift as needed</p>
+    <p>- Secure as you need</p>
+    <li>Name three disadvantages of onsite virtualization.</li>
+    <p>- Costly</p>
+    <p>- Requires significant networking infrastructure</p>
+    <p>- Not easy to upgrade</p>
+    <li>What does the term "Virtualize in the cloud" mean?</li>
+    <p>"Virtualize in the cloud" refers to offsite virtualization, where all of your applications, servers, and Operating
+        Systems are maintained elsewhere.</p>
+    <li>Name four advantages of offsite virtualization.</li>
+    <p>- No infrastructure cost</p>
+    <p>- Management/maintenance is handled by others</p>
+    <p>- Geographical flexibility</p>
+    <p>- Seemingly unlimited upgrade options</p>
+    <li>Name two disadvantages of offsite virtualization</li>
+    <p>- Data is also in the cloud (security concern)</p>
+    <p>- Contractual limitations (long-term contracts)</p>
+
+</ol>
+<a href="javascript:window.open('','_self').close();"style="color:black">close assignment</a>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Introduction to Virtualization</title>
+    <link rel="stylesheet" href="public_blue.css">
+</head>
+
+<body>
+<div id="Header">
+    <h1>Introduction to Virtualization</h1>
+    <h2>Eli the Computer Guy</h2>
+    <h3>Cliff Harris - CIS 3357 - Prof. Crowley</h3>
+</div>
+<ol>
+    <li>How does virtualization relate to Cloud Computing?</li>
+    <p>These terms are often used interchangeably.  However, they are not the same thing.</p>
+    <p>Virtualization is a component within Cloud Computing.  You use it to separate the <i>Operating System</i> from the underlying hardware.</p>
+    <p>Cloud Computing is a much larger concept than Virtualization.  You use this to separate the <i>Application</i> from the underlying hardware</p>
+    <li>In a virtualization context, what is an Operating System instance?</li>
+    <p>In virtualization, an Operating System instance is an instance of an Operating System installed on the hypervisor layer of a server, instead of the physical layer.  These are self-contained Operating Systems that can be copied, moved, and deleted easily. </p>
+    <li>Is it difficult to move instances between different hardware units?</li>
+    <p>No, it is not difficult.  Thanks to virtualization, you can install the same hypervisor on the new hardware unit and move instances between the hardware units very easily.</p>
+    <li>On a Type 1 Hypervisor, how would you manage the O/S instances?</li>
+    <p>For Type 1 (or "native" or "bare metal") hypervisors, you start with a blank server with no Operating System and install the hypervisor.  You then install the Operating System instances onto the hypervisor from another networked computer with Management Software using a Management Console.</p>
+    <li>According to Eli, how much does a Type 1 Hypervisor usually cost?</li>
+    <p>The hypervisor software itself is usually free from the vendor.  There are free basic versions of Management Software, but more robust Management Software is often very expensive.</p>
+    <li>What cautions does Eli have concerning networking and Type 2 Hypervisors?</li>
+    <p>Type 2 (or "hosted") hypervisors are installed onto an Operating System itself on a physical computer.  You can then install Operating System instances into that hypervisor.</p>
+    <p>The problem with using a Type 2 hypervisor for networking is that if you are going to be using the host computer for other things (e.g. web surfing, gaming, Outlook), the network traffic from the virtual servers can get mixed up and cause problems.</p>
+    <li>How does Eli define web applications?</li>
+    <p>A web application is software that is hosted on a web server and accessed via client computers.</p>
+    <li>How does Eli define Cloud Computing?</li>
+    <p>Eli defines Cloud Computing as an overall philosophy and design concept that tries to separate applications from the operating systems from the hardware that runs everything.</p>
+    <li>How does Eli describe a server cluster? What is a typical application for a server cluster?</li>
+    <p>A server cluster is an environment of multiple servers, each with its own Operating System, with an application that supports clustering so that the servers can communicate and share information and computing resources.</p>
+    <p>Eli cites Database applications and Microsoft Active Directory as applications that can run on a server cluster.</p>
+    <li>What are terminal servers? How would describe the architecture used in a terminal server setup?</li>
+    <p>Terminal servers allow terminal services clients to get little slivers of time from the processor on the server.  It is similar to a client/server architecture.</p>
+    <li>What is a thin client?</li>
+    <p>Thin clients are the devices that terminal servers provide services to.  It is called a "thin" client because most of the computing power is placed on the server.</p>
+    <li>What is an application server? How does it differ from a terminal server?</li>
+    <p>The application is hosted on the server and accessed by users through thin clients. Application services are installed on terminal servers.</p>
+    <li>What is Virtual Box? How much does it cost?</li>
+    <p>Virtual Box is an open source virtualization software from Oracle.  It is free.</p>
+    <li>What advice does Eli offer concerning licensing?</li>
+    <p>Be careful when purchasing virtualization software because their licensing can be a "nightmare".  Many times, the licensing fee is per socket (or per processor).  Sometimes, you may even have to pay a license per core.  In a single server with 8 quad-core processors, that can mean as many as 32 license fees.</p>
+</ol>
+<a href="javascript:window.open('','_self').close();"style="color: black">close assignment</a>
+</body>
+</html>

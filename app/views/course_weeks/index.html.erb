@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Course Weeks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_weeks.each do |course_week| %>
+      <tr>
+        <td><%= link_to 'Show', course_week %></td>
+        <td><%= link_to 'Edit', edit_course_week_path(course_week) %></td>
+        <td><%= link_to 'Destroy', course_week, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course week', new_course_week_path %>

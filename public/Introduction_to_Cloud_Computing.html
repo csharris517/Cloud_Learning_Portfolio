@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Introduction to Cloud Computing</title>
+    <link rel="stylesheet" href="public_blue.css">
+</head>
+
+<body>
+<div id="Header">
+    <h1>Introduction to Cloud Computing</h1>
+    <h2>Eli the Computer Guy</h2>
+    <h3>Cliff Harris - CIS 3357 - Prof. Crowley</h3>
+</div>
+<ol>
+    <li>How does Eli define Cloud Computing?</li>
+    <p>An overall philosophy and design concept that tries to separate applications from the operating
+        systems from the hardware that runs everything.</p>
+    <li>According to Eli, what does virtual computing do? Why is this advantageous?</li>
+    <p>Puts the operating system in its own little container running on hardware. This way, if something fails
+        on hardware, the instance of that operating system can migrate to another server without loss of
+        service.</p>
+    <li>How does Eli relate virtual computing to cloud computing? </li>
+    <p>Virtual computing is a component of cloud computing, but cloud computing is far more than simple
+        VMs.</p>
+    <li>In a cloud context, what is clustering?</li>
+    <p>Setting up multiple different servers with operating systems and an application that supports clustering
+        so that the servers communicate and share information and computing resources.</p>
+    <li>What major application does Eli cite as being particularly friendly to clustering?</li>
+    <p>Database applications, Microsoft Active Directory</p>
+    <li>What happens when an individual server in a cluster fails? </li>
+    <p>The cluster realizes that the server has failed and does not send users to that server.</p>
+    <li>In a cluster context, what is replication?</li>
+    <p>When the different databases talk to each other and exchange/copy information.</p>
+    <li>What does a terminal server do? </li>
+    <p>Allows terminal services clients to get little slivers of time from the processor on the server.</p>
+    <li>What do we call the devices that terminal servers provide services to?</li>
+    <p>Thin Clients</p>
+    <li>What are application servers? How do they differ from terminal servers? </li>
+    <p>The application is hosted on the server and accessed by users through thin clients. Application services
+        are installed on terminal servers.</p>
+    <li>Eli cites two ways to do virtualization. What are they? When would you employ either one?</li>
+    <p>Client Installed Virtualization Software: you install a normal operating system, and then install
+        virtualization client software that allows you to install another operating system (instance) on top of the
+        original one.</p>
+    <p>Hypervisor Software: like an operating system that you install on the hardware that you want to run
+        virtual computers on.</p>
+    <li>What is the name of the free open source virtualization software?</li>
+    <p>Virtual Box</p>
+    <li>Can you, without any other software, directly manage a hypervisor?</li>
+    <p>No, you have to use a piece of management software (vSphere) to administer the virtual computers.</p>
+    <li>Amazon's EC2 environment was an early example of cloud computing. Describe the service
+        and explain why an organization may find it compatible.</li>
+    <p>Allows users to create and use a server instance on Amazon's hardware and pay only for what they
+        used. An organization may find it compatible because it allows them to use off-premise hosting for
+        services or applications.</p>
+    <li>What is a hosted instance?</li>
+    <p>A virtual environment hosted on someone else's hardware; paid for based upon whatever services you
+        use.</p>
+    <li>What is an edge server? Why are they significant?</li>
+    <p>Multiple servers connected to the main server where all of the virtual images are hosted. Increases
+        performance because connecting to the main server results in speed degradation over distances.</p>
+    <li>What is dynamic bit rate switching? How can it impact your cloud computing billing?</li>
+    <p>There are four or five copies of videos, etc. used, and you connect to a copy based on speed. If the
+        user's speed is fluctuating, it can end up in the downloading of multiple copies, each of which costs
+        money.</p>
+    <li>What is the difference between a hosted instance and a hosted solution?</li>
+    <p>Hosted solutions are Applications/Services hosted by a company that provides a service, where you
+        rent the services as you need them. They are different in that a hosted instance is merely a virtual
+        environment, whereas hosted solutions provide services through user interfaces, applications, etc.</p>
+    <li>Compare and contrast public and a private clouds.</li>
+    <p>Public: all cloud computing infrastructure is on the web where basically anyone can get access to it.</p>
+    <p>Private: using the same technologies in your own server room without using services on the web.</p>
+</ol>
+<a href="javascript:window.open('','_self').close();" style="color: black">close assignment</a>
+</body>
+</html>

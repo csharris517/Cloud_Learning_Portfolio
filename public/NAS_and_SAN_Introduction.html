@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>NAS and SAN Introduction</title>
+    <link rel="stylesheet" href="public_blue.css">
+</head>
+
+<body>
+<div id="Header">
+    <h1>NAS and SAN Introduction</h1>
+    <h2>Eli the Computer Guy</h2>
+    <h3>Cliff Harris - CIS 3357 - Prof. Crowley</h3>
+</div>
+<ol>
+    <li>When Eli says that NAS is 'basically' a shared file server, what does he mean? How does a
+        NAS differ from a conventional file server?</li>
+    <p>NAS (Network Attached Storage) are essentially file servers because all it does is store data. It is
+        more secure because you're not interacting with the server in any other way.</p>
+    <li>According to Eli, what is the problem with serving files from a conventional Windows File
+        Server?</li>
+    <p>The problem with conventional Windows File Servers is that they can also be used for other things,
+        which leaves them exposed to risks, e.g. viruses, misuse, etc.</p>
+    <li>How does Eli define a SAN?</li>
+    <p>A SAN (Storage Area Network) is a network of devices that store data.</p>
+    <li>In a SAN context, what is a cluster? What are the inherent advantages of a cluster?</li>
+    <p>A cluster is a group of devices set up to store data together. The advantage is that, depending on
+        redundancy and other factors, the SAN and its data are all still accessible if one or more devices fail.
+        Additionally, you can map a drive to the SAN and have that folder on the SAN act like a drive
+        mounted to your machine, allowing you to install software to the SAN and access it from your device.</p>
+    <li>From Eli's perspective, what is the most obnoxious problem with commercial storage?</li>
+    <p>When you buy a server, you put in a certain size hard drive. Once the hard drive is full, you have to
+        figure out how to add space to your server seamlessly. Without a SAN, data migration can be a very
+        tedious task.</p>
+    <li>From Eli's perspective, what is the advantage of storing a VM instance on a SAN and running
+        the instance on a hypervisor?</li>
+    <p>If one of the physical servers fails, the instances can instantly be migrated to other machines on the
+        SAN, where all the instances of the OS's are stored.</p>
+    <li>From Eli's perspective, what is the major advantage and disadvantage of Fiber Channel?</li>
+    <p>The Fiber Channel is the main storage network that is used for the SAN environments.</p>
+    <p>Major advantage: speed. The connection can be 2-16 Gb/s.</p>
+    <p>Major disadvantage: price. Fiber optic networks are very expensive.</p>
+    <li>How does Eli describe iSCSI?</li>
+    <p>He describes it as the "Poor Man's" SAN, with the same basic functionality but slower speed.</p>
+</ol>
+<a href="javascript:window.open('','_self').close();"style="color: black">close assignment</a>
+</body>
+</html>
