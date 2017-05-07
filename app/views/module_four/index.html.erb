@@ -1,13 +1,22 @@
-<h1 style="text-align: center">Module Four</h1>
+<h1 style="text-align: center">Module Four</h1><br/>
 
 <p class="text-center" style="width: 80%;margin: auto">
   In this Module, we studied Mobility and Radio Frequency Principles through class lectures and a Wireless
   Communications textbook. We completed the Rackspace Big Data MOOC, where we studied Big Data concepts and terminology.
   We also took a look at Internet of Things products/industries and how they relate to Porter's Competitive Models
   discussed in Module 3.
+</p><br/>
+
+<p class="text-center" style="width: 80%;margin: auto">
+  The first assignment I chose to show for this Module is a SWOT Analysis of Smart Refrigerators with RFID Readers. It
+  first explains the concepts behind these refrigerators, then examines the Strengths, Weaknesses, Opportunities, and
+  Threats for this technology. The second assignment shows the completion of all three Rackspace MOOC's: CloudU,
+  Evolution of a Solution, and Big Data. To me, the most informative and helpful section of this Module was completion
+  of the Rackspace Certifications. These courses solidified the learning that I did during class lectures and outside
+  reading.
 </p>
 
-<h2 style="text-align: center">Week Twelve</h2>
+<h2 style="text-align: center">Assignments</h2><br/>
 
 <table class="table table-bordered table-hover" style="width: 80%;margin: auto">
   <thead>
@@ -18,64 +27,13 @@
   </tr>
   </thead>
   <tbody>
-  <% @w12assignments.each do |w12assignment| %>
+  <% @assignments.each do |assignment| %>
       <tr>
-        <td><%= w12assignment.name %></td>
-        <td><%= w12assignment.assignment_source %></td>
-        <td><%= link_to w12assignment.assignment_file, asset_path(w12assignment.assignment_file), target: '_blank' %></td>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
       </tr>
   <% end %>
   </tbody>
 </table>
-
-<br>
-
-<h2 style="text-align: center">Week Thirteen</h2>
-
-<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
-  <thead>
-  <tr>
-    <th>Assignment Name</th>
-    <th>Source</th>
-    <th>Link</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @w13assignments.each do |w13assignment| %>
-      <tr>
-        <td><%= w13assignment.name %></td>
-        <td><%= w13assignment.assignment_source %></td>
-        <td><%= link_to w13assignment.assignment_file, asset_path(w13assignment.assignment_file), target: '_blank' %></td>
-      </tr>
-  <% end %>
-  </tbody>
-
-</table>
-
-<br/>
-
-<h2 style="text-align: center">Week Fifteen</h2>
-
-<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
-  <thead>
-  <tr>
-    <th>Assignment Name</th>
-    <th>Source</th>
-    <th>Link</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @w15assignments.each do |w15assignment| %>
-      <tr>
-        <td><%= w15assignment.name %></td>
-        <td><%= w15assignment.assignment_source %></td>
-        <td><%= link_to w15assignment.assignment_file, asset_path(w15assignment.assignment_file), target: '_blank' %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-<br/>
-
 <br/>

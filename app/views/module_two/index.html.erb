@@ -1,12 +1,22 @@
-<h1 style="text-align: center">Module Two</h1>
+<h1 style="text-align: center">Module Two</h1><br/>
 
-<p class="text-center" style="width: 80%;margin: auto">In this Module, we dive deep into Virtualization and its related concepts. To learn about these concepts, I watched
-  and completed assignments on tutorials by <a href=" https://youtu.be/zLJbP6vBk2M", target="_blank">Eli the Computer
-  Guy</a> and <a href="http://www.professormesser.com/", target="_blank">Professor Messer</a>.  I also read Special
-  Publications from <a href="https://www.nist.gov/", target="_blank">NIST</a> and completed lessons on
-  <a href="http://cloudu.rackspace.com/diweb/home", target="_blank">Rackspace CloudU</a>.</p>
+<p class="text-center" style="width: 80%;margin: auto">In this Module, we dive deep into Virtualization and its related
+  concepts. To learn about these concepts, I watched
+  and completed assignments on tutorials by <a href=" https://youtu.be/zLJbP6vBk2M" , target="_blank">Eli the Computer
+  Guy</a> and <a href="http://www.professormesser.com/" , target="_blank">Professor Messer</a>. I also read Special
+  Publications from <a href="https://www.nist.gov/" , target="_blank">NIST</a> and completed lessons on
+  <a href="http://cloudu.rackspace.com/diweb/home" , target="_blank">Rackspace CloudU</a>.</p><br/>
 
-<h2 style="text-align: center">Week Five</h2>
+<p class="text-center" style="width: 80%;margin: auto">
+  For Module Two, I chose to show these assignments because they begin to explain Virtualization, which is a key
+  component of Cloud Computing. The first assignment covers a conceptual view of Virtualization and some of the benefits
+  that it can provide. The second assignment is much more technical, but explains a lower-level view of what
+  Virtualization is and how it works. The
+  <a href="http://cloudu.rackspace.com/diweb/home" , target="_blank">Rackspace CloudU</a> tutorials were most helpful to
+  my learning in this module because they were both informative and interactive.
+</p>
+
+<h2 style="text-align: center">Assignments</h2><br/>
 <table class="table table-bordered table-hover" style="width: 80%;margin: auto">
   <thead>
   <tr>
@@ -17,7 +27,7 @@
   </thead>
 
   <tbody>
-  <% @w5assignments.each do |assignment| %>
+  <% @assignments.each do |assignment| %>
       <tr>
         <td><%= assignment.name %></td>
         <td><%= assignment.assignment_source %></td>
@@ -28,46 +38,3 @@
 </table>
 
 <br>
-
-<h2 style="text-align: center">Week Six</h2>
-<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
-  <thead>
-  <tr>
-    <th>Assignment Name</th>
-    <th>Source</th>
-    <th>Link</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @w6assignments.each do |assignment| %>
-      <tr>
-        <td><%= assignment.name %></td>
-        <td><%= assignment.assignment_source %></td>
-        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-
-<br>
-<h2 style="text-align: center">Week Seven</h2>
-<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
-  <thead>
-  <tr>
-    <th>Assignment Name</th>
-    <th>Source</th>
-    <th>Link</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @w7assignments.each do |assignment| %>
-      <tr>
-        <td><%= assignment.name %></td>
-        <td><%= assignment.assignment_source %></td>
-        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>

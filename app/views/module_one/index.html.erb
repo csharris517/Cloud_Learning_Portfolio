@@ -1,8 +1,19 @@
-<h1 style="text-align: center">Module One</h1>
+<h1 style="text-align: center">Module One</h1><br/>
 
-<p class="text-center" style="width: 80%;margin: auto">In this module, we learned about the basics of Cloud Computing. We began by learning some of the technology and terminology associated with Cloud Computing, including the different Service Models and Deployment Models. We also studied various storage components, including RAID, SSDs, and network-based storage solutions. The resources used were Eli the Computer Guy, NIST Special Publications, and the multimedia learning environment CloudU from Rackspace.</p>
+<p class="text-center" style="width: 80%;margin: auto">In this module, we learned about the basics of Cloud Computing.
+  We began by learning some of the technology and terminology associated with Cloud Computing, including the different
+  Service Models and Deployment Models. We also studied various storage components, including RAID, SSDs, and
+  network-based storage solutions. The resources used were Eli the Computer Guy, NIST Special Publications, and the
+  multimedia learning environment CloudU from Rackspace.</p><br/>
 
-<h2 style="text-align: center">Week One</h2>
+<p class="text-center" style="width: 80%;margin: auto">
+  For this Module, I have selected the following assignments. I chose these because they contain the most information.
+  They are somewhat dry in content, but helped build the foundation for me to continue learning about Cloud Computing
+  and how it can be used to benefit businesses. The learning method that best helped me in this Module was watching the
+  videos from <a href="https://www.youtube.com/user/elithecomputerguy", target="_blank">Eli the Computer Guy</a>.
+</p>
+
+<h2 style="text-align: center">Assignments</h2><br/>
 
 <table class="table table-bordered table-hover" style="width: 80%;margin: auto">
   <thead>
@@ -13,63 +24,13 @@
   </tr>
   </thead>
   <tbody>
-  <% @w1assignments.each do |w1assignment| %>
+  <% @assignments.each do |assignment| %>
       <tr>
-        <td><%= w1assignment.name %></td>
-        <td><%= w1assignment.assignment_source %></td>
-        <td><%= link_to w1assignment.assignment_file, asset_path(w1assignment.assignment_file), target: '_blank' %></td>
+        <td><%= assignment.name %></td>
+        <td><%= assignment.assignment_source %></td>
+        <td><%= link_to assignment.assignment_file, asset_path(assignment.assignment_file), target: '_blank' %></td>
       </tr>
   <% end %>
   </tbody>
 </table>
-
-<br>
-
-<h2 style="text-align: center">Week Two</h2>
-
-<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
-  <thead>
-  <tr>
-    <th>Assignment Name</th>
-    <th>Source</th>
-    <th>Link</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @w2assignments.each do |w2assignment| %>
-      <tr>
-        <td><%= w2assignment.name %></td>
-        <td><%= w2assignment.assignment_source %></td>
-        <td><%= link_to w2assignment.assignment_file, asset_path(w2assignment.assignment_file), target: '_blank' %></td>
-      </tr>
-  <% end %>
-  </tbody>
-
-</table>
-
-<br>
-
-<h2 style="text-align: center">Week Three</h2>
-
-<table class="table table-bordered table-hover" style="width: 80%;margin: auto">
-  <thead>
-  <tr>
-    <th>Assignment Name</th>
-    <th>Source</th>
-    <th>Link</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @w3assignments.each do |w3assignment| %>
-      <tr>
-        <td><%= w3assignment.name %></td>
-        <td><%= w3assignment.assignment_source %></td>
-        <td><%= link_to w3assignment.assignment_file, asset_path(w3assignment.assignment_file), target: '_blank' %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-<br />
-<br />
+<br/>

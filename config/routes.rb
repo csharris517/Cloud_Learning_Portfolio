@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'module_two/index'
   get 'module_three/index'
   get 'module_four/index'
-
+  get 'reflections/index'
 
   root 'welcome#index'
 

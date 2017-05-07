@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cliff Harris Assignment Portfolio</title>
+  <title>Cliff Harris Learning Portfolio</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,8 +9,8 @@
 <body>
 
 <div class="container-fluid splash">
-  <h1>Cloud Computing Portfolio</h1>
-  <h2>by Cliff Harris</h2>
+  <h1>Cloud Computing Infrastructure</h1>
+  <h2>Learning Portfolio - by Cliff Harris</h2>
   <div class="row"><br></div>
 </div>
 
@@ -20,29 +20,38 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left">
+        <li class="divider-vertical"></li>
         <li>
           <%= link_to 'Home', welcome_index_path, style: "color:black" %>
         </li>
+        <li class="divider-vertical"></li>
         <li>
           <%= link_to 'Module 1', module_one_index_path, style: "color:black" %>
         </li>
+        <li class="divider-vertical"></li>
         <li>
           <%= link_to 'Module 2', module_two_index_path, style: "color:black" %>
         </li>
+        <li class="divider-vertical"></li>
         <li>
           <%= link_to 'Module 3', module_three_index_path, style: "color:black" %>
         </li>
+        <li class="divider-vertical"></li>
         <li>
           <%= link_to 'Module 4', module_four_index_path, style: "color:black" %>
         </li>
+        <li class="divider-vertical"></li>
+        <li>
+          <%= link_to 'Reflections', reflections_index_path, style: "color:black" %>
+        </li>
+        <li class="divider-vertical"></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li class="divider-vertical"></li>
         <li>
-          <%= link_to 'All Assignments', assignments_path, style: "color:black" %>
+          <a href="http://104.131.47.181/", target="_blank" style="color: black">Assignment Portfolio</a>
         </li>
-        <li>
-          <a href="#">Learning Portfolio Coming Soon...</a>
-        </li>
+        <li class="divider-vertical"></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
